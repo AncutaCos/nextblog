@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column; /* Cambia direzione del flex per allineare la data e l'immagine verticalmente */
+}
+
+.imgContainer {
+  width: 100%; /* Usa il 100% della larghezza disponibile */
+  height: 400px; /* Altezza fissa */
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.metadata {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 14px; /* Assicurati che la dimensione del font sia coerente */
+}
+
+@media screen and (max-width: 768px) {
+  .imgContainer {
+    display: none; /* Nasconde l'immagine su dispositivi piccoli */
+  }
+}

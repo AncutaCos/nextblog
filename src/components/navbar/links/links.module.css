@@ -1,0 +1,214 @@
+.container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.logoContent {
+  display: flex;
+}
+
+.logoImg {
+  background: #FFFFFF;
+  border-radius: 50%;
+  width: 170px;
+  height: auto;
+  border: 5px solid #FFFFFF;
+  overflow: hidden;
+}
+
+.logoImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.logoText h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.logoText h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.logoText h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.logout {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(192, 192, 192, 0.7);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.logout:hover {
+  background-color: white;
+  color: black;
+}
+
+.menuButton,
+.mobileLinks {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logoImg {
+    width: 100px;
+  }
+
+  .logoText h1 {
+    font-size: 18px;
+  }
+
+  .logoText h2 {
+    font-size: 16px;
+  }
+
+  .logoText h3 {
+    font-size: 14px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+
+  .mobileLinks {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 100px);
+    background: 
+      url('https://www.transparenttextures.com/patterns/white-diamond.png'), 
+      linear-gradient(135deg,  
+          #c1a667, 
+          #9f9256 );
+  color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modalCloseText {
+  color: #666;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .closeButton {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+/* Link Button Styles */
+.linkButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(153, 106, 163, 0.7);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color:#FFFFFF;
+  color: black;
+}
+.loginButton {
+  display: none;
+}
+
+.loginButton.show {
+  display: inline-block;
+}
+

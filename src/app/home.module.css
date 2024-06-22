@@ -1,0 +1,274 @@
+.container {
+  margin-top: 50px; /* Aggiungi un margine superiore per abbassare i contenitori */ 
+  display: flex; /* Utilizza il layout flexbox */
+  gap: 100px; /* Distanza tra gli elementi figli */
+  flex-direction: row-reverse; /* Disposizione degli elementi in ordine inverso */
+}
+.textContainer {
+  flex: 1.5; /* Occupa più spazio rispetto ad altri elementi flex */
+  display: flex; /* Utilizza il layout flexbox */
+  flex-direction: column; /* Disposizione degli elementi figli in colonna */
+  align-items: center; /* Centra gli elementi lungo l'asse trasversale */
+  gap: 10px; /* Distanza tra gli elementi figli */
+}
+.title {
+  font-size: 26px; /* Dimensione del font del titolo */
+  text-align: center; /* Allinea il testo al centro */
+  opacity: 0; /* Opacità iniziale */
+  transition: opacity 1s ease-in-out; /* Transizione dell'opacità */
+}
+
+.title.visible {
+  opacity: 1; /* Rende visibile il titolo */
+}
+
+.desc {
+  font-size: 20px; /* Dimensione del font della descrizione */
+  opacity: 0; /* Opacità iniziale */
+  transition: opacity 1s ease-in-out; /* Transizione dell'opacità */
+}
+
+.desc.visible {
+  opacity: 1; /* Rende visibile la descrizione */
+}
+.link {
+  display: inline-block; /* Trasforma il link in un elemento inline-block */
+  padding: 10px 20px; /* Aggiunge padding per dimensioni uniformi */
+  margin: 1px 0; /* Aggiunge margine per la spaziatura verticale */
+  text-align: center; /* Centra il testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  background-color: #6c5156; /* Colore di sfondo */
+  color: #FFFFFF; /* Colore del testo */
+  border-radius: 5px; /* Angoli arrotondati */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effetto 3D iniziale */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizioni per l'effetto hover */
+  opacity: 0; /* Opacità iniziale */
+  transition: opacity 1s ease-in-out, color 0.3s ease-in-out; /* Transizioni dell'opacità e del colore */
+  width: 350px; /* Larghezza fissa per uniformare la misura dei link */
+}
+
+.link.visible {
+  opacity: 1; /* Rende visibile il link */
+}
+
+.link:hover {
+  transform: translateY(-3px); /* Solleva leggermente il bottone */
+  box-shadow: 0 8px 12px rgb(78,43,36); /* Aumenta l'ombra per un effetto 3D più pronunciato */
+  background-color: #593d3c; /* Cambia il colore di sfondo al passaggio del mouse */
+  color: #FFFFFF; /* Mantiene il colore del testo */
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.064);
+}
+
+.facebook {
+  background-color: #174cbe;
+}
+
+.whatsapp {
+  background-color: #16b929;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+.imageContainer {
+  flex: 1; /* Occupa spazio proporzionale */
+  display: grid; /* Utilizza il layout grid */
+  grid-template-columns: repeat(6, 1fr); /* Sei colonne uguali */
+  grid-template-rows: repeat(4, 1fr); /* Quattro righe uguali */
+  gap: 4px; /* Spaziatura tra gli elementi grid */
+  width: 450px; /* Larghezza fissa */
+  height: 550px; /* Altezza fissa */
+  position: relative; /* Posizione relativa */
+}
+
+.heroImgWrapper {
+  position: relative; /* Posizione relativa */
+}
+
+.heroImg {
+  width: 100%; /* Larghezza completa */
+  height: 100%; /* Altezza completa */
+  object-fit: cover; /* Adatta l'immagine */
+  opacity: 0; /* Opacità iniziale */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transizioni dell'opacità e della trasformazione */
+  cursor: pointer; /* Cambia il cursore */
+}
+
+.heroImg:hover:not(.noHover) {
+  transform: scale(1.2); /* Ingrandisce l'immagine al passaggio del mouse */
+}
+
+.visible {
+  opacity: 1; /* Rende visibile l'elemento */
+}
+
+.hidden {
+  opacity: 0; /* Rende nascosto l'elemento */
+}
+
+.enlarged {
+  object-fit: cover; /* Adatta l'immagine */
+  position: absolute; /* Posizione assoluta */
+  top: 0; /* Posiziona in alto */
+  left: 0; /* Posiziona a sinistra */
+  width: 100%; /* Larghezza completa */
+  height: 100%; /* Altezza completa */
+  z-index: 10; /* Imposta l'ordine di sovrapposizione */
+  background: rgba(255, 255, 255, 0.9); /* Sfondo semi-trasparente */
+  border: 3px solid #4b2e30; /* Cornice rossa con trasparenza */
+  
+}
+
+.noHover {
+  pointer-events: none; /* Disabilita gli eventi di puntamento */
+}
+.counterContainer {
+  margin-top: 10px; /* Distanza superiore */
+  font-size: 20px; /* Dimensione del font */
+  text-align: center; /* Allinea il testo al centro */
+  color: whitesmoke; /* Colore del testo */
+  font-weight: 500; /* Peso del font */
+}
+.motto {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color:#FFFFFF;
+}
+.footerLinks {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #4b2e30; 
+}
+.footerLink {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b2e30;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.footerLink.visible {
+  opacity: 1;
+  
+}
+
+.closeButton {
+  position: absolute; /* Posizione assoluta */
+  top: 10px; /* Posiziona in alto */
+  right: 10px; /* Posiziona a destra */
+  background: #4b2e30; /* Colore di sfondo */
+  color: wheat; /* Colore del testo */
+  border: none; /* Rimuove il bordo */
+  padding: 10px; /* Aggiunge padding */
+  cursor: pointer; /* Cambia il cursore */
+  z-index: 20; /* Imposta l'ordine di sovrapposizione */
+}
+
+.imageDescription {
+  position: absolute; /* Posizione assoluta */
+  bottom: 20px; /* Posiziona in basso */
+  left: 20px; /* Posiziona a sinistra */
+  right: 20px; /* Posiziona a destra */
+  background: #4b2e30; /* Sfondo semi-trasparente */
+  color: wheat; /* Colore del testo */
+  padding: 10px; /* Aggiunge padding */
+  border-radius: 5px; /* Angoli arrotondati */
+  text-align: center; /* Allinea il testo al centro */
+  z-index: 20; /* Imposta l'ordine di sovrapposizione */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Disposizione degli elementi in colonna */
+    text-align: center; /* Allinea il testo al centro */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Disposizione degli elementi in colonna */
+    align-items: center; /* Allinea gli elementi al centro */
+    text-align: center; /* Allinea il testo al centro */
+  }
+
+  .textContainer {
+    order: 1; /* Ordina l'elemento */
+  }
+
+  .imageContainer {
+    order: 2; /* Ordina l'elemento */
+    width: 80%; /* Larghezza relativa */
+  }
+
+  .title {
+    font-size: 24px; /* Dimensione del font */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Aggiungi questa media query */
+  .container {
+    flex-direction: column; /* Disposizione degli elementi in colonna */
+    align-items: center; /* Allinea gli elementi al centro */
+    text-align: center; /* Allinea il testo al centro */
+  }
+
+  .textContainer {
+    order: 1; /* Ordina l'elemento */
+  }
+
+  .imageContainer {
+    order: 2; /* Ordina l'elemento */
+    width: 100%; /* Larghezza completa */
+    height: auto; /* Altezza automatica */
+  }
+
+  .title {
+    font-size: 24px; /* Dimensione del font */
+  }
+
+  .desc {
+    font-size: 18px; /* Dimensione del font */
+  }
+
+  .link {
+    font-size: 16px; /* Dimensione del font */
+    width: auto; /* Larghezza automatica */
+    padding: 8px 16px; /* Padding */
+  }
+}
+

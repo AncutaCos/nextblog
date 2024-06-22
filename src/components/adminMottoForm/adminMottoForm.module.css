@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  font-size: 1.5em;
+  color: var(--textColor);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: bold;
+  color: var(--textColor);
+  margin-bottom: 5px;
+}
+
+.formGroup textarea {
+  padding: 20px;
+  background-color: var(--bgSoft);
+  border: none;
+  border-radius: 5px;
+  color: var(--textColor);
+  resize: vertical;
+  min-height: 75px;
+  font-size: 1em;
+}
+
+.submitButton {
+  padding: 20px;
+  cursor: pointer;
+  background-color: var(--btn);
+  border: none;
+  border-radius: 5px;
+  color: var(--textColor);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: var(--btnHover);
+}
+
+.editorToolbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.editorToolbar button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--btn);
+  border: none;
+  border-radius: 5px;
+  color: var(--textColor);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.editorToolbar button:hover {
+  background-color: var(--btnHover);
+}

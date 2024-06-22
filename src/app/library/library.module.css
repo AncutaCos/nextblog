@@ -1,0 +1,67 @@
+/* library.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.booksContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permette di avvolgere gli elementi su più righe */
+  justify-content: space-around; /* Spaziatura uniforme tra gli elementi */
+  max-width: 1200px; /* Limita la larghezza massima del container */
+}
+
+.bookColumn {
+  flex: 1 1 calc(25% - 20px); /* Ogni colonna occupa il 25% della riga, meno il margine */
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 300px; /* Limita la larghezza massima di ogni colonna */
+}
+
+.bookCard {
+  width: 100%; /* Adatta la larghezza al contenitore */
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px); /* Effetto di sollevamento al passaggio del mouse */
+}
+
+.bookCard img {
+  width: 100%; /* Rendi l'immagine del BookCard larga al 100% */
+  height: auto; /* Imposta l'altezza in modo che l'immagine non venga distorta */
+  margin: 0 auto; /* Centra l'immagine */
+}
+
+.bookDetails {
+  text-align: center;
+}
+
+.bookTitle {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #676666;
+}
+
+@media (max-width: 600px) {
+  .booksContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bookColumn {
+    flex: 1 1 100%; /* Ogni colonna occupa il 100% della larghezza disponibile */
+  }
+}

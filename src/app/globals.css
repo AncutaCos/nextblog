@@ -1,0 +1,107 @@
+:root {
+  /*--bg: rgb(45, 7, 62);*/
+  --bg:#4e2b24;
+  /*--bgSoft: rgb(60, 10, 84);*/
+  --bgSoft: #6c473a;
+  --text: white;
+  --textSoft: rgb(242, 231, 240);
+  --btn: rgb(106, 75, 54);
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*background: linear-gradient(
+    270deg,
+    rgb(44, 4, 63), 
+    #875f10, 
+    rgb(40, 6, 56), 
+    #6f571c, 
+    #3a0540, 
+    #61512a, 
+    #240232, 
+    #675310, 
+    #240232 
+  );*/
+  /*background: linear-gradient(135deg,rgb(236, 236, 75),#a59c2f,#4a4903);*/
+  background: 
+        url('https://www.transparenttextures.com/patterns/white-diamond.png'), 
+        linear-gradient(135deg,  
+            #c1a667, 
+            #9f9256 );
+    color: white;
+  /*background-size: 300% 300%;*/
+  animation: gradientAnimation 150s ease infinite;
+  /*background: linear-gradient(135deg, #fff8d1, #fff6b5, #ebd782, hsl(40, 12%, 40%));
+  background-size: 300% 300%;*/
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+.container {
+  width: 1536px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    width: 380px;
+  }
+}

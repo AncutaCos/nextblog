@@ -1,0 +1,16 @@
+.motto {
+    
+    color: #ffffff; /* Colore del testo */
+    padding: 10px 20px; /* Spaziatura interna */
+    text-align: center; /* Testo centrato */
+    font-size: 18px; /* Dimensione del testo */
+    font-weight: bold; /* Testo in grassetto */
+    position: absolute; /* Posizionamento assoluto */
+    top: 100px; /* Posiziona sotto il navbar */
+    left: 0; /* Posiziona a sinistra */
+    width: 100%; /* Larghezza completa */
+    z-index: 999; /* Ordine di sovrapposizione */
+    justify-self: center;
+    text-align: center;
+  }
+  

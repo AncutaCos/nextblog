@@ -1,0 +1,52 @@
+/* ImageCarousel.module.css */
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.imgContainer {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.carouselButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .imgContainer {
+    height: 300px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}

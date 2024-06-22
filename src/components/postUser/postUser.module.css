@@ -1,0 +1,30 @@
+/* postUser.module.css */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px; /* Assicurati che la dimensione del font sia coerente */
+  color: gray;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px; /* Assicurati che la dimensione del font sia coerente */
+  color: gray;
+}
+
+.username {
+  font-size: 18px; /* Assicurati che la dimensione del font sia coerente */
+  font-weight: bold;
+  color: whitesmoke;
+}

@@ -1,0 +1,129 @@
+.textContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  color: var(--btn);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Aumenta lo spazio tra il sottotitolo e il testo */
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.imageContainer {
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease; /* Aggiungi una transizione per un effetto più fluido */
+  object-fit: cover;
+  
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 4px solid #ccc; /* Aggiungi una cornice */
+}
+
+.imageContainer:hover {
+  transform: scale(1.25); /* Ingrandisci l'immagine quando passi sopra il contenitore */
+}
+.pageContainer {
+  position: relative;
+  padding: 20px;
+}
+.languageToggleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.languageToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #dee6ee; /* Puoi cambiare il colore della freccia qui */
+}
+
+.textContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.languageContent {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.imageContainer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: 400px; /* Limita la larghezza massima dell'immagine */
+    max-height: 300px; /* Limita l'altezza massima dell'immagine */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  border-radius: 10px;
+}
+.languageContent {
+  /* Stili del contenuto della lingua */
+  transition: transform 0.5s ease;
+}
+
+.flip {
+  transform: rotateY(360deg);
+}
+.rotate {
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  margin-right: 10px; /* Aggiungi uno spazio tra l'icona e il testo */
+  transition: transform 0.5s;
+}
+
+.languageToggle:hover .rotate {
+  transform: rotate(360deg);
+}

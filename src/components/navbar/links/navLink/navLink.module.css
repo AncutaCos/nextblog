@@ -1,0 +1,23 @@
+.linkButton {
+   display: inline-block;
+   min-width: 100px;
+   padding: 10px;
+   background-color: rgba(192, 192, 192, 0.7); /* Grigio trasparente */
+   color: black;
+   text-decoration: none;
+   font-weight: 500;
+   text-align: center;
+   border-radius: 20px;
+   transition: all 0.3s ease;
+ }
+ 
+ .linkButton:hover {
+   background-color: white; /* Sfondo bianco al passaggio del mouse */
+   color: black;
+ }
+ 
+ .active {
+   background-color: var(--text); /* Colore di sfondo attivo */
+   color: var(--bg); /* Colore del testo attivo */
+ }
+ 
