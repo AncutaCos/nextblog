@@ -39,7 +39,7 @@
 }
 
 .imageContainer:hover {
-  transform: scale(1.25); /* Ingrandisci l'immagine quando passi sopra il contenitore */
+  transform: scale(1.1); /* Ingrandisci l'immagine quando passi sopra il contenitore */
 }
 .pageContainer {
   position: relative;

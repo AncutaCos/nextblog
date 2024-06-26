@@ -4,23 +4,22 @@ import styles from "./about.module.css";
 import Image from "next/image";
 
 const AboutPage = () => {
-  const { locale} = useLanguage();
+  const { locale } = useLanguage();
 
   return (
     <div className={styles.pageContainer}>
-
       <div className={styles.textContainer}>
         <div
           className={`${styles.languageContent} ${
-            locale === 'it' ? styles.flip : ""
+            locale === "it" ? styles.flip : ""
           }`}
         >
-          {locale === 'it' ? (
+          {locale === "it" ? (
             <>
               {/* Contenuto in italiano */}
               <h2 className={styles.subtitle}>Storia della Parocchia</h2>
               <h2 className={styles.subtitle}>
-              Parrocchia Santa Grande Martire Anastasia Romana (22 dicembre)
+                Parrocchia Santa Grande Martire Anastasia Romana (22 dicembre)
               </h2>
               <p className={styles.desc}>
                 Chiesa: Via Elena Berutti 30, Prato.
@@ -48,21 +47,24 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Situata a una distanza di 20 chilometri da Firenze, Prato è la
-                seconda città per numero di abitanti della regione Toscana e la
-                terza dell&rsquo;Italia centrale. A seguito delle scoperte
-                archeologiche, si è riscontrato che il luogo in cui si trova
-                attualmente la città era popolato sin dal periodo Neolitico.
-                Essendo attraversata dal fiume Bisenzio da nord a sud, la città
-                ha avuto la risorsa naturale necessaria per la lavorazione delle
-                fibre tessili, tanto che i documenti medievali attestano nel
-                1360 la produzione di materiali tessili in questa zona. Col
-                tempo, la produzione e la lavorazione dei materiali tessili sono
-                diventate l&rsquo;occupazione principale degli abitanti di
-                Prato, tanto che nel 20° secolo la città è diventata il più
-                grande centro di industria tessile d&rsquo;Europa. La storia e
-                l&rsquo;evoluzione della lavorazione di questi materiali è
-                presentata in dettaglio al Museo dei Tessuti situato in loco.
+                La Parrocchia &quot;Santa Grande Martire Anastasia Romana&quot;
+                si trova nella città di Prato, in via Elena Berruti 30 (PO) e fa
+                parte dell&rsquo;Episcopato Ortodosso Romeno d&rsquo;Italia.
+                Prato è situata a una distanza di 20 km da Firenze ed è la
+                seconda città per numero di abitanti nella regione Toscana e la
+                terza nell&rsquo;Italia centrale con oltre 220.000 abitanti. Le
+                scoperte archeologiche attestano che il luogo dove sorge
+                attualmente la città era popolato già dal Neolitico. Essendo
+                attraversata da nord a sud dal fiume Bisenzio, la città ha la
+                risorsa naturale necessaria per la lavorazione delle fibre
+                tessili, così che i documenti del periodo medievale (anno 1360)
+                attestano una ricca produzione di materiali tessili in questa
+                zona. Nel tempo, la produzione e la lavorazione dei materiali
+                tessili sono diventate la principale occupazione degli abitanti
+                di Prato, tanto che nel XX secolo la città era il più grande
+                centro dell&rsquo;industria tessile in Europa. La storia e
+                l&rsquo;evoluzione della lavorazione di questi materiali sono
+                presentate in dettaglio al Museo del Tessile situato in città.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -73,24 +75,27 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Nel centro della città si trova la Cattedrale cattolica di Santo
-                Stefano che dal 11° secolo conserva una parte della Cintola
-                della Vergine Maria portata da Gerusalemme. Per gli abitanti
-                della zona, questa reliquia è diventata il punto di riferimento
-                più importante della città, poiché nel Medioevo e nell&rsquo;
-                Epoca Moderna la città è stata protetta attraverso molti
-                miracoli della Vergine Maria dalle invasioni barbariche e
-                ottomane, ma anche da siccità o alluvioni. Così i rumeni venuti
-                qui hanno trovato un valido sostegno nella Vergine Maria
-                attraverso la sua Cintola.
+                Al centro della città si trova la cattedrale cattolica di Santo
+                Stefano che, oltre a conservare reliquie di Santo Stefano e di
+                Sant&rsquo;Anna, custodisce fin dal XIII secolo una parte della
+                Cintola della Madonna, portata da Gerusalemme nel contesto delle
+                crociate. Per gli abitanti della zona, questa reliquia è
+                diventata il riferimento più importante della città perché nel
+                Medioevo e nell&rsquo;Epoca Moderna la città è stata protetta
+                attraverso miracoli dalla Madonna dalle invasioni barbariche e
+                ottomane, nonché da siccità, inondazioni e incendi. Così anche i
+                rumeni che sono venuti qui hanno trovato un valido sostegno
+                nella protezione della Madonna.
               </p>
               <p className={styles.desc}>
-                La vita ecclesiastica degli ortodossi rumeni di questa zona si è
-                svolta prima nella parrocchia &quot;Esaltazione della Santa
-                Croce&quot; di Firenze, nata nel 1984 come risposta della Chiesa
-                Ortodossa Romena alla richiesta dei rumeni di Firenze e Prato di
-                avere un prete rumeno e un servizio ortodosso nella loro lingua
-                madre.
+                La Provincia di Prato è nata nel 1992, e le località e i sette
+                comuni che la compongono facevano parte in precedenza della
+                Provincia di Firenze. Così anche la vita ecclesiastica degli
+                ortodossi rumeni della zona si è svolta inizialmente
+                nell&rsquo;ambito della parrocchia &quot;Ascensione del
+                Signore&quot; di Firenze, nata nel 1984 in risposta alla
+                richiesta dei rumeni delle città di Firenze e Prato di avere un
+                prete ortodosso rumeno e funzioni in lingua madre.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -101,15 +106,21 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                La Parrocchia Ortodossa Romena di Prato è stata fondata il 10
-                dicembre 2010 per decisione del Vescovo Siluan della Diocesi
-                Ortodossa Romena d&rsquo;Italia, in risposta alla richiesta
-                scritta dei rumeni di Prato. La parrocchia è stata intitolata
-                &quot;Santa Grande Martire Anastasia Romana&quot; (22 dicembre)
-                e ha avuto come prete e fondatore il Rev. Preot Ionică Saghin. I
-                rumeni hanno ritrovato la loro identità spirituale e nazionale
-                nel seno della parrocchia e partecipano con zelo alla vita
-                ecclesiastica.
+                Con la creazione della nuova provincia di Prato e a causa
+                dell&rsquo;aumento del numero di rumeni nella zona, si sentiva
+                sempre più la necessità di organizzare un servizio ortodosso in
+                lingua rumena in città. Così il 10 dicembre 2010, a seguito
+                della richiesta scritta avanzata dai cristiani ortodossi rumeni
+                di Prato, è stata fondata la Parrocchia Ortodossa Romena
+                &quot;Santa Grande Martire Anastasia Romana &quot; con la
+                decisione del Vescovo Siluan dell&rsquo;Episcopato Ortodosso
+                Romeno d&rsquo;Italia, e come prete fondatore è stato designato
+                il Reverendo Prete Ionică Saghin. A partire dal settembre 2016,
+                il servizio sacerdotale è stato assunto dal padre Mihai Anton a
+                seguito del trasferimento del primo parroco nella Metropolia
+                dell&rsquo;Europa Centrale e Settentrionale, e dal 24 settembre
+                2022 si è aggiunto nel servizio liturgico anche il diacono padre
+                Marian Raghină.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -120,17 +131,22 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                La comunità ortodossa è stata ospitata successivamente in
-                diverse chiese cattoliche nel periodo 2010 – 2013, dopodiché, a
-                partire dall&rsquo;estate del 2013, viveva la gioia dei servizi
-                liturgici in uno spazio affittato (un ex magazzino di tessuti)
-                che è stato attrezzato con tutto il necessario per il buon
-                svolgimento del culto ortodosso. <br /> I cristiani della
-                parrocchia sono diventati a loro volta missionari in diversi
-                modi, vivendo e testimoniando la fede ortodossa tra persone di
-                altre religioni e partecipando attivamente alla fondazione di
-                nuove parrocchie nella zona, così che di anno in anno ci sono
-                altre anime che si aggiungono alla Chiesa di Cristo.
+                La comunità è stata ospitata in vari luoghi di culto cattolici
+                dal 2010 al 2013, dopo di che le funzioni e le attività della
+                parrocchia si sono svolte in uno spazio affittato dal 2013 al
+                2022. Sia la preoccupazione per il pagamento dell&rsquo;affitto
+                mensile sia la mancanza di possibilità di una stabile ospitalità
+                in un luogo di culto cattolico hanno suscitato il bisogno e il
+                desiderio di possedere uno spazio liturgico proprio che
+                corrispondesse alla vita ecclesiastica ortodossa. Così, dopo
+                lunghi sforzi e attese, nel 2018 la comunità ha acquistato, con
+                il contributo esclusivo dei fedeli, un&rsquo;antica Fabbrica di
+                Tessuti in via Elena Berruti 30 a Prato, per la quale ha
+                ottenuto le autorizzazioni delle autorità per la trasformazione
+                in un luogo di culto cristiano ortodosso. Il 1° dicembre 2019 è
+                stata fatta la preghiera di benedizione per l&rsquo;inizio dei
+                lavori, e il 1° giugno 2022 la comunità si è trasferita nel
+                proprio luogo di culto - la chiesa di Santa Anastasia.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -141,13 +157,16 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                A partire da settembre 2016, a seguito del trasferimento su
-                richiesta del Rev. Prete Ionică Saghin nell&rsquo;Arcidiocesi
-                della Germania, Austria e Lussemburgo, il servizio della
-                parrocchia è stato affidato al giovane prete Mihai Anton. Il
-                servizio continua sotto la guida dei vescovi della diocesi sugli
-                stessi coordinate spirituali, cercando l&rsquo;approfondimento
-                nella Liturgia, Confessione, Comunione e Catechesi.
+                Il 10 dicembre 2023 la Parrocchia ha ricevuto un importante
+                sostegno dal Dipartimento per i Rumeni all&rsquo;Estero per l&rsquo;acquisto
+                di un immobile ad uso culturale catechetico vicino alla chiesa,
+                in via Elena Berruti 32, dove funzionerà la Scuola Parrocchiale
+                e una Sala da Pranzo. La comunità parrocchiale sta proseguendo i
+                lavori per adornare la chiesa con pitture e tutto ciò che è
+                necessario per lo spazio di culto. Inoltre, tra le
+                preoccupazioni della comunità vi è anche l&rsquo;allestimento dello
+                spazio per attività culturali, educative e sociali accanto alla
+                chiesa.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -158,57 +177,27 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Fin dai primi tempi della Parrocchia, i cristiani e il prete
-                hanno sentito la necessità di uno spazio di culto proprio in cui
-                poter vivere la fede senza preoccuparsi del pagamento
-                dell&rsquo;affitto o del frequente cambio di luogo di
-                culto.Così, dopo lunghe trattative e attese, nel 2018 la
-                comunità dei romeni ortodossi di Prato ha acquistato una vecchia
-                Fabbrica di Tessuti per la quale ha ottenuto le autorizzazioni
-                necessarie per la trasformazione in chiesa ortodossa. Il 1
-                dicembre 2019 si è tenuta la preghiera di benedizione per
-                l&rsquo;inizio dei lavori di restauro e allestimento con la
-                speranza che arrivino a buon fine.
-              </p>
-              <div className={styles.imageContainer}>
-                <Image
-                  src="/Paroh8.jpg"
-                  alt="Image 2"
-                  width={300}
-                  height={200}
-                />
-              </div>
-              <p className={styles.desc}>
                 Tra gli eventi e le attività importanti nella vita della
                 parrocchia si ricordano:
                 <br />
-                - Le visite dei nostri vescovi: nel 2014 Sua Eccellenza Siluan e
-                nel 2019 Sua Eccellenza Atanasie,
+                - Visite dei nostri gerarchi: PS Siluan nel 2014 e PS Atanasie
+                nel 2019 e 2022.
                 <br />
-                - Pellegrinaggi a Gerusalemme, Loreto (casa della Madonna), Roma
-                (tombe di san Pietro e san Paolo e di altri santi), Bari
-                (reliquie di san Nicola) e diverse escursioni <br />- Le
-                celebrazioni dei bambini per il Natale, la Pasqua,
-                l&rsquo;Annunciazione e la Giornata Nazionale (1 dicembre){" "}
+                - Pellegrinaggi a Gerusalemme, Grecia, Monte Athos, Roma,
+                Loreto, Bari, Venezia, Firenze e varie escursioni.
                 <br />
-                - I concerti di canti natalizi dei cori adulti, adolescenti e
-                bambini
+                - Concerti di canti natalizi dei Cori di Adulti e Bambini.
                 <br />
-                - Conversazioni spirituali con personalità ecclesiastiche in
-                patria e nella diaspora Il Circolo di Conversazioni Filocaliche
-                per la lettura e il commento dei testi della collezione
-                Filocalia
+                -Conversazioni spirituali e Conferenze.
                 <br />
-                - La raccolta di pacchi per aiutare coloro in difficoltà in
-                Romania e nella Repubblica Moldova <br />
-                - La visita ai detenuti nel carcere di Prato <br />
-                - I campi estivi per bambini e adolescenti. <br />
+                - Organizzazione di Raccolte per i bisognosi di Romania e
+                Moldavia.
                 <br />
-                Un sentito ringraziamento va ai genitori, fratelli, sorelle e a
-                tutti i parenti nostri in Romania e altrove che ci hanno dato la
-                vita e ci hanno donato la vera fede. Che la gioia santa sia su
-                tutti coloro che sono fondatori della parrocchia, membri della
-                comunità e costruttori della chiesa che si sta edificando!
+                - Visita e assistenza ai detenuti nel carcere di Prato <br />
+                - I campi estivi ed escursioni per bambini e adolescenti. <br />
+                <br />
+                È doveroso ringraziare Dio e Santa Anastasia per tutti i
+                benefici elargiti a questa benedetta comunità.
                 <br />
                 <br />
                 <strong>
@@ -221,10 +210,9 @@ const AboutPage = () => {
             <>
               {/* Contenuto in rumeno */}
               <h2 className={styles.subtitle}>Istoricul Parohiei</h2>
-              <div className={styles.languageToggleContainer}>
-              </div>
+              <div className={styles.languageToggleContainer}></div>
               <h2 className={styles.subtitle}>
-              Parohia Sfânta Mare Muceniță Anastasia Romana (22 decembrie)
+                Parohia Sfânta Mare Muceniță Anastasia Romana (22 decembrie)
               </h2>
               <p className={styles.desc}>
                 Biserică: Via Elena Berutti 30, Prato.
@@ -252,20 +240,23 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Situat la o distanță de 20 kilometri de Florența, Prato este al
-                doilea oraș ca număr de locuitori din regiunea Toscana și al
-                treilea din Italia centrală. În urma descoperirilor arheologice,
-                s-a constatat că locul în care este așezat actualmente orașul a
-                fost populat încă din perioada Neoliticului. Fiind traversat de
-                râul Bisenzio de la nord spre sud, orașul a avut resursa
-                naturală necesară prelucrării fibrelor textile, astfel că
-                documentele medievale atestă în 1360 producția de materiale
-                textile în această zonă. Cu timpul, producerea și prelucrarea
-                materialelor din țesut a devenit ocupația de bază a locuitorilor
-                din Prato, încât în secolul 20 orașul a devenit cel mai mare
-                centru de industrie textilă din Europa. Istoria și evoluția
-                prelucrării acestor materiale este prezentată în detaliu la
-                Muzeul Textilelor aflat în localitate.
+                Parohia ,,Sfânta Mare Muceniță Anastasia Romana” se află în
+                orașul Prato, via Elena Berruti 30 (PO) și face parte din
+                Episcopia Ortodoxă Română a Italiei. Prato este situat la o
+                distanță de 20 km de Florența (Firenze), este al doilea oraș ca
+                număr de locuitori din regiunea Toscana și al treilea din Italia
+                centrală cu peste 220 000 de locuitori. Descoperirile
+                arheologice atestă că locul în care este așezat actualmente
+                orașul a fost populat încă din perioada Neoliticului. Fiind
+                traversat de la nord spre sud de râul Bisenzio, orașul are
+                resursa naturală necesară prelucrării fibrelor textile, astfel
+                că documentele din perioada medievală (anul 1360) atestă o
+                bogată producție de materiale textile în această zonă. Cu
+                timpul, producerea și prelucrarea materialelor textile a devenit
+                principala ocupație a locuitorilor din Prato, încât în secolul
+                20 orașul era cel mai mare centru de industrie textilă din
+                Europa. Istoria și evoluția prelucrării acestor materială este
+                prezentată în detaliu la Muzeul Textilelor aflat în localitate.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -276,23 +267,26 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                În centrul orașului se află Catedrala catolică Sfântul Ștefan
-                care începând cu secolul 11 păstrază o parte din Brâul Maicii
-                Domnului adus de la Ierusalim. Pentru locuitorii din zonă acest
-                odor sfânt a devenit cel mai important reper al orașului
-                deoarece în Evul Mediu și Epoca Modernă cetatea a fost ocrotită
-                prin multe minuni ale Maicii Domnului de năvălirile barbare și
-                otomane, dar și de secetă sau potop. Astfel că românii veniți
-                aici au găsit un sprijin de nădejde în Maica Domnului prin Brâul
-                ei.
+                În centrul orașului se află catedrala catolică Sfântul Ștefan
+                care pe lângă părticele din moaștele Sf. Ștefan și ale Sf. Ana
+                păstrează încă din secolul 13 o parte din Brâul Maicii Domnului
+                adusă de la Ierusalim în contextul cruciadelor. Pentru
+                locuitorii din zonă acest odor a devenit cel mai important reper
+                al orașului deoarece în Evul Mediu și în Epoca Modernă cetatea a
+                fost ocrotită prin minuni de către Maica Domnului de năvălirile
+                barbare și otomane dar și de secetă, potop și incendiu. Astfel
+                că și românii care au venit aici au găsit un sprijin de nădejde
+                în ocrotirea Maicii Domnului.
               </p>
               <p className={styles.desc}>
-                Viața bisericească a românilor ortodocși din această zonă s-a
-                desfășurat mai întâi în cadrul parohiei &quot;Înălțarea Sfintei
-                Cruci&quot; din Florența care a luat naștere în 1984 prin
-                răspunsul dat de către Patriarhia Română la cererea românilor
-                din Florența și Prato de a avea un preot român și slujire
-                ortodoxă în limba maternă.
+                Provincia Prato a luat naștere în anul 1992, iar localitățile și
+                cele 7 comune componente făceau parte anterior din Provincia
+                Firenze. Astfel că și viața bisericească a românilor ortodocși
+                din zonă s-a desfășurat mai întâi în cadrul parohiei ,,Înălțarea
+                Domnului” din Firenze care a luat naștere în anul 1984 prin
+                răspunsul dat de Patriarhia Română la cererea românilor din
+                orașele Florența și Prato de a a avea preot ortodox român și
+                slujbe în limba maternă.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -303,15 +297,20 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Parohia Ortodoxă Română Prato s-a înființat în data de 10
-                decembrie 2010 prin hotărâre Preasfințitului Parinte Episcop
-                Siluan al Episcopiei Ortodoxe Române a Italiei ca răspuns la
-                cerea scrisă a românilor de la Prato. Parohia a primit hramul
-                &quot;Sfânta Mare Muceniță Anastasia Romana&quot;(22 decembrie)
-                având ca preot și întemeietor pe Preacucernicul pr. Ionică
-                Saghin. Românii și-au regăsit identiatea duhovnicească și
-                națională în sânul parohiei și participă cu râvnă la viața
-                bisericească.
+                Odată cu înființarea noii provincii Prato dar și datorită
+                creșterii numărului românilor din zonă se simțea tot mai mult
+                nevoia organizării unei slujiri ortodoxe în limba română în
+                localitate. Astfel că pe data de 10 decembrie 2010, ca urmarea a
+                solicitării scrise înaintate de creștinii ortodocși români din
+                Prato s-a înființat Parohia Ortodoxă Română ,,Sf. M. Mc.
+                Anastasia Romana” prin hotărârea Preasfințitului Părinte Episcop
+                Siluan al Episcopiei Ortodoxe Române a Italiei, iar ca preot și
+                întemeietor a fost desemnat Preacucernicul Preot Ionică Saghin.
+                Începând cu luna septembrie a anului 2016 slujirea preoțească a
+                fost preluată de părintele Mihai Anton ca urmare a transferului
+                celui dintâi preot paroh în Mitropolia Europei Centrale și de
+                Nord, iar de la 24 septembrie 2022 s-a adăugat în slujire
+                liturgică și părintele diacon Marian Raghină.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -322,17 +321,22 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Comunitatea ortodoxă a fost găzduită pe rând în mai multe
-                biserici catolice în perioada 2010 – 2013 după care, începând
-                din vara anului 2013 , își trăia bucuria slujbelor într-un
-                spațiu închiriat (un fost depozit de materiale textile) care a
-                fost amenajat cu toate cele de trebuință bunei desfășurări a
-                cultului ortodox.
-                <br /> Creștinii parohiei au devenit la rândul lor misionari în
-                diferite feluri prin trăirea și mărturisirea credinței ortodoxe
-                printre cei de alte religii și prin participarea activă la
-                înființarea de noi parohii în zonă, astfel că an de an sunt și
-                alte suflete ce se adaugă Bisericii lui Hristos.
+                Comunitatea a fost găzduită pe rând în mai multe locașuri de
+                cult catolice în perioada 2010 – 2013, după care slujbele și
+                activitățile parohiei s-au desfășurat într-un spațiu închiriat
+                în perioada 2013 – 2022. Atât grija pentru plata chiriei lunare
+                cât și lipsa posibilității unei găzduiri stabile într-un locaș
+                de cult catolic au trezit nevoia și dorința deținerii unui
+                spațiu liturgic propriu care să corespundă vieții bisericești
+                ortodoxe. Astfel că după îndelungi demersuri și așteptări, în
+                anul 2018 comunitatea a achiziționat, prin contribuția exclusivă
+                a credincioșilor, o veche Fabrică de Textile la adresa Via Elena
+                Berruti nr. 30 la Prato, pentru care a obținut avizele
+                autorităților în vederea amenajării unui locaș de cult creștin
+                ortodox. La 1 decembrie 2019 s-a făcut rugăciunea de
+                binecuvântare a începutului lucrărilor, iar la 1 iunie 2022
+                comunitatea s-a mutat în propriul locaș de cult – biserica Sf.
+                Anastasia.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -343,12 +347,16 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Începând cu luna septembrie 2016, prin transferul la cerere al
-                P.C. Pr. Ionică Saghin în Arhiepiscopia Germaniei, Austriei și
-                Luxembourgului, slujirea parohiei a fost înmânată tânărului
-                preot Mihai Anton. Slujirea continuă sub îndrumarea ierarhilor
-                Episcopiei pe aceleași coordonate duhovnicești căutând adâncirea
-                în Liturghie, Spovedanie, Împărtășanie și Cateheză.
+                Pe 10 decembrie 2023 Parohia a beneficiat de o susținere
+                importantă din partea Departamentului pentru Românii de
+                Pretutindeni la achiziția unui imobil pentru uz cultural
+                catehetic în proximitatea bisericii la adresa Via Elena Berruti
+                nr. 32 în care va funcționa Școala Parohială și o Sală de Mese.
+                Comunitatea parohială urmează demersul împodobirii bisericii cu
+                pictură și toate cele de folos spațiului de cult. De asemenea
+                printre preocupările comunității este și amenajarea spațiului
+                pentru activitățile culturale, educative și sociale aflat lângă
+                biserică.
               </p>
               <div className={styles.imageContainer}>
                 <Image
@@ -359,63 +367,32 @@ const AboutPage = () => {
                 />
               </div>
               <p className={styles.desc}>
-                Încă de la începuturile Parohiei, creștinii și preotul au simțit
-                nevoia unui spațiu de slujire propriu în care să se poată trăi
-                credința fără grija plății chiriei sau a schimbării frecvente a
-                locului de slujbă. Astfel că, după îndelungi demersuri și
-                așteptări, în anul 2018 comunitatea românilor ortodocși de la
-                Prato a cumpărat o veche Fabrică de Textile pentru care a
-                obținut avizele transformării în biserică ortodoxă.
-                <br />
-                La 1 decembrie 2019 s-a făcut rugăciunea de binecuvântare a
-                începutului lucrărilor de restaurare și amenajare cu nădejdea că
-                vor ajunge la bun sfârșit.
-              </p>
-              <div className={styles.imageContainer}>
-                <Image
-                  src="/Paroh8.jpg"
-                  alt="Image 1"
-                  width={300}
-                  height={200}
-                />
-              </div>
-              <p className={styles.desc}>
                 Printre evenimentele și activitățile importante din viața
                 parohiei amintim:
                 <br />
-                - Vizitele ierarhilor noștri: 2014 – PS Siluan și 2019 - PS
-                Atanasie,
+                - Vizitele ierarhilor noștri: 2014 – PS Siluan și PS Atanasie în 2019 și 2022.
                 <br />
-                - Pelerinaje la Ierusalim, Loreto (casa Maicii Domnului), Roma
-                (mormintele sf. Petru și Pavel și ale altor sfinți), Bari
-                (moaștele sf. Nicolae) și diferite excursii
+                - Pelerinaje la Ierusalim, Grecia, Sfântul Munte Athos, Loreto,
+                Roma, Bari, Venezia, Firenze și diferite excursii.
                 <br />
-                - Serbările copiilor de Nașterea Domnului, Învierea Domnului,
-                Buna Vestire și Ziua Națională (1 decembrie)
+                - Concertele de Colinde ale Corurilor de Adulți și de Copii.
                 <br />
-                - Concertele de Colinde ale Corurilor de Adulți, Adolescenți și
-                Copii
+                - Convorbiri duhovnicești și Conferințe.
                 <br />
-                - Convorbiri duhovnicești cu personalități bisericești din țară
-                și diaspora
+                - Cercul de cateheză cu Adulții – Convorbiri Filocalice.
                 <br />
-                - Cercul de Convorbiri Filocalice de citire și comentare a
-                textelor din colecția Filocalia
+                - Organizarea de colete pentru nevoiași din România și Moldova.
                 <br />
-                - Organizarea de colete pentru ajutorarea celor aflați în nevoi
-                din România și Republica Moldova
+                - Vizitarea și cercetarea celor din Închisoarea de la Prato
                 <br />
-                - Cercetarea celor din Închisoarea de la Prato
-                <br />
-                - Tabere de vară pentru copii și adolescenți. <br />
+                - Tabere și Excursii pentru copii și adolescenți. <br />
               </p>
               <p className={styles.desc}>
-                Un gând de prețuire se îndreaptă către părinții, frații,
-                surorile și toate rudeniile noastre din România și din alte
-                părți care ne-au adus la viață și ne-au dăruit nouă credința cea
-                adevărată. Bucuria cea sfântă să fie peste toți cei ce sunt
-                întemeietori ai parohiei, membri ai comunității și ctitori ai
-                bisericii ce se zidește! <br /> <br />
+                Se cuvine să aducem mulțumire Bunului Dumnezeu și Sfintei
+                Anastasia pentru toate binefacerile revărsate asupra acestei
+                comunități binecuvântate.
+                <br />
+                <br />
                 <strong>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pr. Mihai Anton
                 </strong>

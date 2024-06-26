@@ -1,11 +1,11 @@
 :root {
   /*--bg: rgb(45, 7, 62);*/
-  --bg:#4e2b24;
+  --bg:#040540;
   /*--bgSoft: rgb(60, 10, 84);*/
-  --bgSoft: #6c473a;
+  --bgSoft: white;
   --text: white;
   --textSoft: rgb(242, 231, 240);
-  --btn: rgb(106, 75, 54);
+  --btn: rgb(15, 24, 93);
 }
 @keyframes gradientAnimation {
   0% {
@@ -40,8 +40,8 @@ body {
   background: 
         url('https://www.transparenttextures.com/patterns/white-diamond.png'), 
         linear-gradient(135deg,  
-            #c1a667, 
-            #9f9256 );
+            #8ecdf1, 
+            #2183d8,#8ecdf1 );
     color: white;
   /*background-size: 300% 300%;*/
   animation: gradientAnimation 150s ease infinite;

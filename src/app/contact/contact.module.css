@@ -29,7 +29,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #4a0b1c;
+  color: var(--bg);
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -65,12 +65,12 @@
   border: none;
   outline: none;
   background-color:  #FFFFFF;
-  color: #4a0b1c;
+  color: var(--bg);
 }
 
 .form button {
   padding: 20px;
-  background-color: #4a0b1c;
+  background-color: var(--bg);
   color: #FFFFFF;
   font-weight: bold;
   border: none;

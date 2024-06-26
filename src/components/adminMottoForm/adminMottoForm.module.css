@@ -10,7 +10,7 @@
 
 .container h2 {
   font-size: 1.5em;
-  color: var(--textColor);
+  color: var(--bg);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -22,7 +22,7 @@
 
 .formGroup label {
   font-weight: bold;
-  color: var(--textColor);
+  color: var(--bg);
   margin-bottom: 5px;
 }
 
@@ -31,7 +31,7 @@
   background-color: var(--bgSoft);
   border: none;
   border-radius: 5px;
-  color: var(--textColor);
+  color: var(--bg);
   resize: vertical;
   min-height: 75px;
   font-size: 1em;
@@ -43,13 +43,14 @@
   background-color: var(--btn);
   border: none;
   border-radius: 5px;
-  color: var(--textColor);
+  color: white;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .submitButton:hover {
   background-color: var(--btnHover);
+  color: var(--bg);
 }
 
 .editorToolbar {
@@ -71,4 +72,5 @@
 
 .editorToolbar button:hover {
   background-color: var(--btnHover);
+  color: var(--bg);
 }

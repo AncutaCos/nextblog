@@ -1,5 +1,3 @@
-/* library.module.css */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -9,20 +7,20 @@
 
 .booksContainer {
   display: flex;
-  flex-wrap: wrap; /* Permette di avvolgere gli elementi su più righe */
-  justify-content: space-around; /* Spaziatura uniforme tra gli elementi */
-  max-width: 1200px; /* Limita la larghezza massima del container */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
 }
 
 .bookColumn {
-  flex: 1 1 calc(25% - 20px); /* Ogni colonna occupa il 25% della riga, meno il margine */
+  flex: 1 1 calc(25% - 20px);
   box-sizing: border-box;
   padding: 10px;
-  max-width: 300px; /* Limita la larghezza massima di ogni colonna */
+  max-width: 300px;
 }
 
 .bookCard {
-  width: 100%; /* Adatta la larghezza al contenitore */
+  width: 100%;
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ccc;
@@ -30,16 +28,17 @@
   background-color: #f9f9f9;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  height: 100%; /* Assicura che l'altezza sia al 100% */
 }
 
 .bookCard:hover {
-  transform: translateY(-5px); /* Effetto di sollevamento al passaggio del mouse */
+  transform: translateY(-5px);
 }
 
 .bookCard img {
-  width: 100%; /* Rendi l'immagine del BookCard larga al 100% */
-  height: auto; /* Imposta l'altezza in modo che l'immagine non venga distorta */
-  margin: 0 auto; /* Centra l'immagine */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .bookDetails {
@@ -62,6 +61,6 @@
   }
 
   .bookColumn {
-    flex: 1 1 100%; /* Ogni colonna occupa il 100% della larghezza disponibile */
+    flex: 1 1 100%;
   }
 }

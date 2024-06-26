@@ -37,7 +37,7 @@
   margin: 1px 0; /* Aggiunge margine per la spaziatura verticale */
   text-align: center; /* Centra il testo */
   text-decoration: none; /* Rimuove la sottolineatura */
-  background-color: #6c5156; /* Colore di sfondo */
+  background-color: var(--bg); /* Colore di sfondo */
   color: #FFFFFF; /* Colore del testo */
   border-radius: 5px; /* Angoli arrotondati */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effetto 3D iniziale */
@@ -53,8 +53,8 @@
 
 .link:hover {
   transform: translateY(-3px); /* Solleva leggermente il bottone */
-  box-shadow: 0 8px 12px rgb(78,43,36); /* Aumenta l'ombra per un effetto 3D più pronunciato */
-  background-color: #593d3c; /* Cambia il colore di sfondo al passaggio del mouse */
+  box-shadow: 0 8px 12px var(--bg); /* Aumenta l'ombra per un effetto 3D più pronunciato */
+ /* background-color: rgb(42, 56, 165);*/ /* Cambia il colore di sfondo al passaggio del mouse */
   color: #FFFFFF; /* Mantiene il colore del testo */
 }
 
@@ -142,7 +142,7 @@
   height: 100%; /* Altezza completa */
   z-index: 10; /* Imposta l'ordine di sovrapposizione */
   background: rgba(255, 255, 255, 0.9); /* Sfondo semi-trasparente */
-  border: 3px solid #4b2e30; /* Cornice rossa con trasparenza */
+  border: 3px solid white; /* Cornice rossa con trasparenza */
   
 }
 
@@ -167,14 +167,14 @@
   margin-top: 20px;
   text-align: center;
   padding: 10px;
-  border-top: 1px solid #4b2e30; 
+  border-top: 1px solid var(--bg); 
 }
 .footerLink {
   display: inline-block;
   margin: 0 15px;
   font-size: 18px;
   font-weight: 500;
-  color: #4b2e30;
+  color: var(--bg);
   text-decoration: underline;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -190,7 +190,7 @@
   position: absolute; /* Posizione assoluta */
   top: 10px; /* Posiziona in alto */
   right: 10px; /* Posiziona a destra */
-  background: #4b2e30; /* Colore di sfondo */
+  background: var(--bg); /* Colore di sfondo */
   color: wheat; /* Colore del testo */
   border: none; /* Rimuove il bordo */
   padding: 10px; /* Aggiunge padding */
@@ -203,7 +203,7 @@
   bottom: 20px; /* Posiziona in basso */
   left: 20px; /* Posiziona a sinistra */
   right: 20px; /* Posiziona a destra */
-  background: #4b2e30; /* Sfondo semi-trasparente */
+  /*background: var(--bg); /* Sfondo semi-trasparente */
   color: wheat; /* Colore del testo */
   padding: 10px; /* Aggiunge padding */
   border-radius: 5px; /* Angoli arrotondati */

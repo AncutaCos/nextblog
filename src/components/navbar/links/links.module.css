@@ -119,8 +119,8 @@
     background: 
       url('https://www.transparenttextures.com/patterns/white-diamond.png'), 
       linear-gradient(135deg,  
-          #c1a667, 
-          #9f9256 );
+      #8ecdf1, 
+      #2183d8,#8ecdf1 );
   color: white;
     display: flex;
     flex-direction: column;
