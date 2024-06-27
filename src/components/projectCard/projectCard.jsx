@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from './ProjectCard.module.css';
+import styles from './projectCard.module.css';
 import PostContent from '../PostContent';
 
 const ProjectCard = ({ project }) => {
