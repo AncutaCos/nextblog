@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,27 +7,12 @@ import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 import { handleLogout } from "@/lib/action";
 import { useLanguage } from "@/lib/LanguageContext";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Links = ({ session }) => {
   const { locale, switchLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [showLoginButton, setShowLoginButton] = useState(false); // Stato per gestire la visibilità del bottone di login
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      // Esempio: CTRL + ALT + L per mostrare/nascondere il bottone di login
-      if (event.ctrlKey && event.altKey && event.key === 'l') {
-        setShowLoginButton((prev) => !prev); // Inverti lo stato attuale di showLoginButton
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
 
   const links = [
     {
@@ -95,12 +80,10 @@ const Links = ({ session }) => {
             </form>
           </>
         ) : (
-          showLoginButton && (
-            <NavLink
-              item={{ title: <FontAwesomeIcon icon={faUser} />, path: "/login" }}
-              className={`${styles.linkButton} ${styles.loginButton} ${showLoginButton ? styles.show : ''}`}
-            />
-          )
+          <NavLink
+            item={{ title: <FontAwesomeIcon icon={faUser} />, path: "/login" }}
+            className={`${styles.linkButton} ${styles.loginButton}`}
+          />
         )}
         <button className={styles.languageButton} onClick={switchLanguage}>
           {locale === 'ro' ? (
