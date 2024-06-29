@@ -2,11 +2,11 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 import styles from "./home.module.css";
 import { useLanguage } from "@/lib/LanguageContext";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
-//import Counter from "@/components/Counter";
-import MottoContent from "@/components/MottoContent"; // Import the MottoContent component
+import MottoContent from "@/components/MottoContent";
 
 const Home = () => {
   const { locale } = useLanguage();
@@ -116,7 +116,6 @@ const Home = () => {
     " ",
     " ",
     " "
-    // Add remaining descriptions here...
   ];
 
   const handleImageClick = (index) => {
@@ -129,6 +128,31 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        {locale === "ro" ? (
+          <>
+            <title>Parohia Ortodoxă Prato</title>
+            <meta name="description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
+            <meta name="keywords" content="parohia ortodoxa Prato, biserica ortodoxa romana, ortodoxa, Prato" />
+            <meta name="author" content="Parohia Ortodoxă Prato" />
+            <meta property="og:title" content="Parohia Ortodoxă Prato - Biserica Ortodoxă Română" />
+            <meta property="og:description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
+            <meta property="og:image" content="/path-to-image.jpg" />
+            <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
+          </>
+        ) : (
+          <>
+            <title>Parrocchia Ortodossa Prato</title>
+            <meta name="description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
+            <meta name="keywords" content="parrocchia ortodossa Prato, chiesa ortodossa romena, ortodossa, Prato" />
+            <meta name="author" content="Parrocchia Ortodossa Prato" />
+            <meta property="og:title" content="Parrocchia Ortodossa Prato - Chiesa Ortodossa Romena" />
+            <meta property="og:description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
+            <meta property="og:image" content="/path-to-image.jpg" />
+            <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
+          </>
+        )}
+      </Head>
       <div className={styles.motto}>
         <MottoContent content={locale === "ro" ? motto.ro : motto.it} />
       </div>
@@ -232,26 +256,25 @@ const Home = () => {
             </p>
           </div>
           <div className={styles.socialContainer}>
-  <a
-    href="https://www.facebook.com/parohia.prato"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`${styles.button} ${styles.facebook}`}
-  >
-    <FaFacebook className={styles.icon} />
-    Facebook
-  </a>
-  <a
-    href="https://wa.me/+393396356697"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`${styles.button} ${styles.whatsapp}`}
-  >
-    <FaWhatsapp className={styles.icon} />
-    WhatsApp
-  </a>
-</div>
-
+            <a
+              href="https://www.facebook.com/parohia.prato"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.button} ${styles.facebook}`}
+            >
+              <FaFacebook className={styles.icon} />
+              Facebook
+            </a>
+            <a
+              href="https://wa.me/+393396356697"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.button} ${styles.whatsapp}`}
+            >
+              <FaWhatsapp className={styles.icon} />
+              WhatsApp
+            </a>
+          </div>
           <div className={styles.footerLinks}>
             <Link
               href="https://episcopia-italiei.it/index.php/ro/"
@@ -291,25 +314,21 @@ function getSpiralOrder(rows, cols) {
   let bottom = rows - 1;
 
   while (left <= right && top <= bottom) {
-    // Aggiungi la riga inferiore da destra a sinistra
     for (let i = right; i >= left; i--) {
       spiral.push(bottom * cols + i);
     }
     bottom--;
 
-    // Aggiungi la colonna sinistra dal basso all'alto
     for (let i = bottom; i >= top; i--) {
       spiral.push(i * cols + left);
     }
     left++;
 
-    // Aggiungi la riga superiore da sinistra a destra
     for (let i = left; i <= right; i++) {
       spiral.push(top * cols + i);
     }
     top++;
 
-    // Aggiungi la colonna destra dall'alto verso il basso
     for (let i = top; i <= bottom; i++) {
       spiral.push(i * cols + right);
     }
