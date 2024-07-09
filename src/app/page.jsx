@@ -146,6 +146,7 @@ const Home = () => {
             <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
           </>
         )}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.motto}>
         <Motto />
