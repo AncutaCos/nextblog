@@ -8,10 +8,13 @@ const Motto = () => {
   const { locale } = useLanguage();
 
   useEffect(() => {
-    const storedMotto = localStorage.getItem("motto");
-    if (storedMotto) {
-      setMotto(JSON.parse(storedMotto));
-    }
+    const fetchMotto = async () => {
+      const res = await fetch('/api/getMotto');
+      const data = await res.json();
+      setMotto(data);
+    };
+
+    fetchMotto();
   }, []);
 
   return (

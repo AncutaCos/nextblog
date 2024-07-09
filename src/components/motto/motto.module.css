@@ -1,16 +1,28 @@
 .motto {
-    
-    color: #ffffff; /* Colore del testo */
-    padding: 10px 20px; /* Spaziatura interna */
-    text-align: center; /* Testo centrato */
-    font-size: 18px; /* Dimensione del testo */
-    font-weight: bold; /* Testo in grassetto */
-    position: absolute; /* Posizionamento assoluto */
-    top: 100px; /* Posiziona sotto il navbar */
-    left: 0; /* Posiziona a sinistra */
-    width: 100%; /* Larghezza completa */
-    z-index: 999; /* Ordine di sovrapposizione */
-    justify-self: center;
-    text-align: center;
+  font-size: 18px; /* Dimensione del testo */
+  font-weight: bold; /* Testo in grassetto */
+  text-align: center; /* Testo centrato */
+  position: relative; /* Posizionamento relativo */
+  margin-top: 20px; /* Spaziatura superiore */
+  width: 100%; /* Larghezza completa */
+  z-index: 999; /* Ordine di sovrapposizione */
+  justify-self: center;
+  padding: 20px; /* Spaziatura interna */
+  color: #ffffff; /* Colore del testo bianco */
+}
+
+@media (max-width: 768px) {
+  .motto {
+    font-size: 16px; /* Dimensione del testo ridotta per dispositivi più piccoli */
+    padding: 16px; /* Spaziatura interna ridotta */
+    margin-top: 15px; /* Regolazione spaziatura superiore */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .motto {
+    font-size: 14px; /* Dimensione del testo ulteriormente ridotta per dispositivi più piccoli */
+    padding: 12px; /* Spaziatura interna ulteriormente ridotta */
+    margin-top: 10px; /* Regolazione spaziatura superiore */
+  }
+}

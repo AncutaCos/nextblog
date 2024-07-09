@@ -27,11 +27,25 @@ const AdminMottoForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const motto = JSON.stringify({ ro: editorContentRo, it: editorContentIt });
-    localStorage.setItem("motto", motto);
-    alert("Motto aggiornato con successo!");
+
+    const res = await fetch('/api/updateMotto', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        mottoRo: editorContentRo,
+        mottoIt: editorContentIt,
+      }),
+    });
+
+    if (res.ok) {
+      alert("Motto aggiornato con successo!");
+    } else {
+      alert("Errore durante l'aggiornamento del motto.");
+    }
   };
 
   return (

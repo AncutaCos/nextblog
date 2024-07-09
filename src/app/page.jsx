@@ -6,7 +6,7 @@ import Head from "next/head";
 import styles from "./home.module.css";
 import { useLanguage } from "@/lib/LanguageContext";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
-import MottoContent from "@/components/MottoContent";
+import Motto from "@/components/motto/Motto";
 
 const Home = () => {
   const { locale } = useLanguage();
@@ -16,14 +16,8 @@ const Home = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [visibleLinks, setVisibleLinks] = useState(Array(8).fill(false));
-  const [motto, setMotto] = useState({ ro: "", it: "" });
 
   useEffect(() => {
-    const storedMotto = localStorage.getItem("motto");
-    if (storedMotto) {
-      setMotto(JSON.parse(storedMotto));
-    }
-
     const spiralOrder = getSpiralOrder(4, 6);
 
     const intervalId = setInterval(() => {
@@ -154,7 +148,7 @@ const Home = () => {
         )}
       </Head>
       <div className={styles.motto}>
-        <MottoContent content={locale === "ro" ? motto.ro : motto.it} />
+        <Motto />
       </div>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
@@ -306,6 +300,7 @@ const Home = () => {
     </>
   );
 };
+
 function getSpiralOrder(rows, cols) {
   const spiral = [];
   let left = 0;

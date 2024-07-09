@@ -24,6 +24,7 @@
   height: auto;
   border: 5px solid #FFFFFF;
   overflow: hidden;
+  aspect-ratio: 1 / 1;
 }
 
 .logoImg img {
@@ -85,6 +86,7 @@
 @media (max-width: 768px) {
   .logoImg {
     width: 100px;
+    aspect-ratio: 1 / 1;
   }
 
   .logoText h1 {
