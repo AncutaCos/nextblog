@@ -123,6 +123,7 @@ const Home = () => {
   return (
     <>
       <Head>
+      <link rel="icon" href="/favicon.ico" />
         {locale === "ro" ? (
           <>
             <title>Parohia Ortodoxă Prato</title>
@@ -146,7 +147,6 @@ const Home = () => {
             <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
           </>
         )}
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.motto}>
         <Motto />
