@@ -123,30 +123,30 @@ const Home = () => {
   return (
     <>
       <Head>
-      <link rel="icon" href="/favicon.ico" />
         {locale === "ro" ? (
           <>
             <title>Parohia Ortodoxă Prato</title>
             <meta name="description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
-            <meta name="keywords" content="parohia ortodoxa Prato, biserica ortodoxa romana, ortodoxa, Prato" />
+            <meta name="keywords" content="parohia ortodoxa Prato, biserica ortodoxa , ortodoxa, Prato" />
             <meta name="author" content="Parohia Ortodoxă Prato" />
-            <meta property="og:title" content="Parohia Ortodoxă Prato - Biserica Ortodoxă Română" />
+            <meta property="og:title" content="Parohia Ortodoxă Prato - Biserica Ortodoxă Prato" />
             <meta property="og:description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
-            <meta property="og:image" content="/path-to-image.jpg" />
+            <meta property="og:image" content="/favicon.ico" />
             <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
           </>
         ) : (
           <>
             <title>Parrocchia Ortodossa Prato</title>
             <meta name="description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
-            <meta name="keywords" content="parrocchia ortodossa Prato, chiesa ortodossa romena, ortodossa, Prato" />
+            <meta name="keywords" content="parrocchia ortodossa Prato, chiesa ortodossa , ortodossa, Prato" />
             <meta name="author" content="Parrocchia Ortodossa Prato" />
-            <meta property="og:title" content="Parrocchia Ortodossa Prato - Chiesa Ortodossa Romena" />
+            <meta property="og:title" content="Parrocchia Ortodossa Prato - Chiesa Ortodossa Prato" />
             <meta property="og:description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
-            <meta property="og:image" content="/path-to-image.jpg" />
+            <meta property="og:image" content="/favicon.ico" />
             <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
           </>
         )}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.motto}>
         <Motto />
