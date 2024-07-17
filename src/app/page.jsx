@@ -150,6 +150,7 @@ const Home = () => {
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="msvalidate.01" content="9680BE57A9657FDFB577A97530F531C1" />
 </Head>
 
       <div className={styles.motto}>
