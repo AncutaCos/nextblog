@@ -17,7 +17,7 @@ const AboutPage = () => {
           {locale === "it" ? (
             <>
               {/* Contenuto in italiano */}
-              <h2 className={styles.subtitle}>Storia della Parocchia</h2>
+              <h2 className={styles.subtitle}>Storia della Parrocchia</h2>
               <h2 className={styles.subtitle}>
                 Parrocchia Santa Grande Martire Anastasia Romana (22 dicembre)
               </h2>
