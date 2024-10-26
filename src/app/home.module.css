@@ -171,20 +171,34 @@
 }
 .footerLink {
   display: inline-block;
-  margin: 0 15px;
+  padding: 10px 20px;
+  margin: 5px;
   font-size: 18px;
-  font-weight: 500;
-  color: var(--bg);
-  text-decoration: underline;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  font-weight: bold;
+  color: white;
+  background-color: var(--bg); /* Use a background color to make it stand out */
+  border-radius: 30px; /* Rounded corners */
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  opacity: 0; /* Initial opacity */
 }
-
 
 .footerLink.visible {
   opacity: 1;
-  
 }
+
+.footerLink:hover {
+  transform: translateY(-4px); /* Lifts the button slightly */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  background-color: #174cbe; /* Brightens the background color on hover */
+}
+
+.footerLink:active {
+  transform: translateY(2px); /* Button presses slightly inward when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
 
 .closeButton {
   position: absolute; /* Posizione assoluta */

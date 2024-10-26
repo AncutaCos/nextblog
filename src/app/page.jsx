@@ -277,14 +277,6 @@ const Home = () => {
           </div>
           <div className={styles.footerLinks}>
             <Link
-              href="https://episcopia-italiei.it/index.php/ro/"
-              className={`${styles.footerLink} ${styles.visible}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {content[locale].diocese}
-            </Link>
-            <Link
               href="https://doxologia.ro/calendar-ortodox"
               className={`${styles.footerLink} ${styles.visible}`}
               target="_blank"
@@ -300,6 +292,14 @@ const Home = () => {
             >
               {content[locale].theofania}
             </Link>
+            <Link
+  href="https://episcopia-italiei.it/index.php/ro/"
+  className={`${styles.footerLink} ${styles.visible}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {content[locale].diocese}
+</Link>
           </div>
         </div>
       </div>
