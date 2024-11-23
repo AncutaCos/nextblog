@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
         <LanguageProvider>
           <div className="container">
             <Navbar />
-            
             {children}
             <Footer />
           </div>
