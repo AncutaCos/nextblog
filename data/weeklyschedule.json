@@ -1,0 +1,19 @@
+{
+  "interval": "30 Noiembrie - 1 Decembrie",
+  "luni": "",
+  "marti": "",
+  "miercuri": "",
+  "joi": "",  
+  "vineri": "",
+  "sambata": [
+    "Sf. Ap. Andrei (ocrotitorul românilor)",
+    "Ora 08:00 - Utrenia şi Dumnezeiasca Liturghie",
+    "Ora 16:00 - Taina Marturisirii (Spovedanie)",
+    "Ora 17:00 - Ora de Religie si Repetiție Colinde",
+    "Ora 18:30 - Vecernia"
+  ],
+  "duminica":  [
+    "Ziua Naţională a României",
+    "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
+  ]
+}

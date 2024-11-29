@@ -4,6 +4,69 @@
   gap: 100px; /* Distanza tra gli elementi figli */
   flex-direction: row-reverse; /* Disposizione degli elementi in ordine inverso */
 }
+
+/* Container principale per i due componenti */
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* Permette che gli elementi vadano a capo su dispositivi più piccoli */
+}
+
+/* Stili per il calendario e il programma settimanale */
+.calendar,
+.schedule {
+  flex: 1;
+  max-width: 50%; /* Impostiamo il massimo per desktop */
+  min-width: 300px; /* Impedisce che diventino troppo piccoli */
+}
+.calendar{
+  margin-top: 20px;
+  flex: 1;
+  max-width: 50%; /* Impostiamo il massimo per desktop */
+  min-width: 300px; /* Impedisce che diventino troppo piccoli */
+
+}
+/* Stili specifici per dispositivi mobili */
+@media (max-width: 1024px) {
+  .mainContainer {
+    flex-direction: column; /* Disposizione a colonna su tablet */
+  }
+
+  .calendar,
+  .schedule {
+    max-width: 100%; /* Il calendario e il programma occupano tutta la larghezza */
+  }
+}
+
+/* Stili per schermi piccoli (smartphone) */
+@media (max-width: 768px) {
+  .calendar,
+  .schedule {
+    width: 100%; /* Massima larghezza per smartphone */
+    margin-bottom: 20px; /* Spazio tra calendario e programma */
+  }
+
+  .mainContainer {
+    padding: 10px; /* Spazio sui bordi per dispositivi mobili */
+  }
+}
+
+/* Schermi molto piccoli (ultra mobile) */
+@media (max-width: 480px) {
+  .calendar,
+  .schedule {
+    width: 100%; /* Intera larghezza per schermi piccoli */
+    height: auto; /* Altezza automatica per evitare distorsioni */
+  }
+
+  .mainContainer {
+    padding: 5px; /* Ulteriori spazi ridotti per dispositivi molto piccoli */
+  }
+}
+
 .textContainer {
   flex: 1.5; /* Occupa più spazio rispetto ad altri elementi flex */
   display: flex; /* Utilizza il layout flexbox */
@@ -37,10 +100,10 @@
   margin: 1px 0; /* Aggiunge margine per la spaziatura verticale */
   text-align: center; /* Centra il testo */
   text-decoration: none; /* Rimuove la sottolineatura */
-  background-color: var(--bg); /* Colore di sfondo */
+  background-color: #894a4a; /* Colore di sfondo */
   color: #FFFFFF; /* Colore del testo */
   border-radius: 5px; /* Angoli arrotondati */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effetto 3D iniziale */
+  box-shadow: 0 4px 6px #6d4747; /* Effetto 3D iniziale */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizioni per l'effetto hover */
   opacity: 0; /* Opacità iniziale */
   transition: opacity 1s ease-in-out, color 0.3s ease-in-out; /* Transizioni dell'opacità e del colore */

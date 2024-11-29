@@ -7,6 +7,13 @@ import styles from "./home.module.css";
 import { useLanguage } from "@/lib/LanguageContext";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import Motto from "@/components/motto/Motto";
+import dynamic from "next/dynamic";
+import DisplayWeeklySchedule from "@/components/DisplayWeeklySchedule/DisplayWeeklySchedule";
+
+const DoxologiaCalendar = dynamic(
+  () => import("../components/DoxologiaCalendar/DoxologiaCalendar"),
+  { ssr: false }
+);
 
 const Home = () => {
   const { locale } = useLanguage();
@@ -109,7 +116,7 @@ const Home = () => {
     " ",
     " ",
     " ",
-    " "
+    " ",
   ];
 
   const handleImageClick = (index) => {
@@ -122,40 +129,74 @@ const Home = () => {
 
   return (
     <>
-    <Head>
-  {locale === "ro" ? (
-    <>
-      <title>Parohia Ortodoxă Prato</title>
-      <meta name="description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
-      <meta name="keywords" content="parohia ortodoxa Prato, biserica ortodoxa , ortodoxa, Prato" />
-      <meta name="author" content="Parohia Ortodoxă Prato" />
-      <meta property="og:title" content="Parohia Ortodoxă Prato - Biserica Ortodoxă Prato" />
-      <meta property="og:description" content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre." />
-      <meta property="og:image" content="/favicon.ico" />
-      <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
-    </>
-  ) : (
-    <>
-      <title>Parrocchia Ortodossa Prato</title>
-      <meta name="description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
-      <meta name="keywords" content="parrocchia ortodossa Prato, chiesa ortodossa , ortodossa, Prato" />
-      <meta name="author" content="Parrocchia Ortodossa Prato" />
-      <meta property="og:title" content="Parrocchia Ortodossa Prato - Chiesa Ortodossa Prato" />
-      <meta property="og:description" content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi." />
-      <meta property="og:image" content="/favicon.ico" />
-      <meta property="og:url" content="https://www.parohiaortodoxaprato.com" />
-    </>
-  )}
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <meta name="msvalidate.01" content="9680BE57A9657FDFB577A97530F531C1" />
-</Head>
-
-      <div className={styles.motto}>
-        <Motto />
+      <Head>
+        {locale === "ro" ? (
+          <>
+            <title>Parohia Ortodoxă Prato</title>
+            <meta
+              name="description"
+              content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre."
+            />
+            <meta
+              name="keywords"
+              content="parohia ortodoxa Prato, biserica ortodoxa , ortodoxa, Prato"
+            />
+            <meta name="author" content="Parohia Ortodoxă Prato" />
+            <meta
+              property="og:title"
+              content="Parohia Ortodoxă Prato - Biserica Ortodoxă Prato"
+            />
+            <meta
+              property="og:description"
+              content="Bine ați venit pe site-ul Parohiei Ortodoxe Prato. Aflați mai multe despre biserica noastră, evenimentele și serviciile noastre."
+            />
+            <meta property="og:image" content="/favicon.ico" />
+            <meta
+              property="og:url"
+              content="https://www.parohiaortodoxaprato.com"
+            />
+          </>
+        ) : (
+          <>
+            <title>Parrocchia Ortodossa Prato</title>
+            <meta
+              name="description"
+              content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi."
+            />
+            <meta
+              name="keywords"
+              content="parrocchia ortodossa Prato, chiesa ortodossa , ortodossa, Prato"
+            />
+            <meta name="author" content="Parrocchia Ortodossa Prato" />
+            <meta
+              property="og:title"
+              content="Parrocchia Ortodossa Prato - Chiesa Ortodossa Prato"
+            />
+            <meta
+              property="og:description"
+              content="Benvenuti nel sito della Parrocchia Ortodossa Prato. Scoprite di più sulla nostra chiesa, gli eventi e i servizi."
+            />
+            <meta property="og:image" content="/favicon.ico" />
+            <meta
+              property="og:url"
+              content="https://www.parohiaortodoxaprato.com"
+            />
+          </>
+        )}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="msvalidate.01" content="9680BE57A9657FDFB577A97530F531C1" />
+      </Head>
+      <div className={styles.mainContainer}>
+      <div className={styles.calendar}>
+        <DoxologiaCalendar />
       </div>
+      <div className={styles.schedule}>
+        <DisplayWeeklySchedule />
+      </div>
+    </div>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           {[...Array(24)].map((_, index) => (
@@ -293,13 +334,13 @@ const Home = () => {
               {content[locale].theofania}
             </Link>
             <Link
-  href="https://episcopia-italiei.it/index.php/ro/"
-  className={`${styles.footerLink} ${styles.visible}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  {content[locale].diocese}
-</Link>
+              href="https://episcopia-italiei.it/index.php/ro/"
+              className={`${styles.footerLink} ${styles.visible}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {content[locale].diocese}
+            </Link>
           </div>
         </div>
       </div>

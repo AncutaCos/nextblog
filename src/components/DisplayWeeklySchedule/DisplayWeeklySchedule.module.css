@@ -1,0 +1,52 @@
+/* DisplayWeeklySchedule.module.css */
+.container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Sfondo bianco con trasparenza */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombra leggera */
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .container h2 {
+    font-size: 24px;
+    color: #c51212;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .day {
+    background-color: rgba(236, 240, 241, 0.8); /* Sfondo dei giorni con trasparenza */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .day h3 {
+    font-size: 18px;
+    color: #2980b9;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  .day p {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  .noEvents {
+    text-align: center;
+    font-size: 16px;
+    color: #e74c3c; /* Rosso chiaro per i giorni senza eventi */
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #f39c12; /* Giallo-arancio per il messaggio di caricamento */
+  }
+  

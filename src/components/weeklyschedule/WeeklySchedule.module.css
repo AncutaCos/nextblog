@@ -1,0 +1,92 @@
+/* WeeklySchedule.module.css */
+
+.scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .scheduleContainer h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .intervalInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .intervalInput label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .scheduleContainer input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .scheduleContainer input:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .dayInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .dayInput label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .scheduleContainer textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    resize: vertical;
+  }
+  
+  .scheduleContainer textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .submitButton {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submitButton:hover {
+    background-color: #357abd;
+  }
+  
+  .submitButton:active {
+    background-color: #2f6a96;
+  }
+  

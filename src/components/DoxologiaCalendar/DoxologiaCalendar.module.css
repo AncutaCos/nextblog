@@ -1,0 +1,33 @@
+.calendarContainer {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.iframeContent {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow-y: scroll;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calendarContainer {
+    max-width: 90%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarContainer {
+    max-width: 100%;
+    height: 300px;
+  }
+}

@@ -10,6 +10,7 @@ import AdminBooks from "@/components/adminBooks/adminBooks";
 import AdminProjects from "@/components/adminProjects/adminProjects";
 import AdminProjectForm from "@/components/adminProjectForm/adminProjectForm";
 import AdminMottoForm from "@/components/adminMottoForm/adminMottoForm";
+import WeeklySchedule from "@/components/weeklyschedule/WeeklySchedule";
 
 const AdminPage = async () => {
   const session = await auth();
@@ -58,6 +59,13 @@ const AdminPage = async () => {
         </div>
         <div className={styles.col}>
           <AdminProjectForm />
+        </div>
+      </div>
+      <div className={styles.row}>
+        {" "}
+        {/* Aggiungi una nuova riga per AdminBookForm */}
+        <div className={styles.col}>
+          <WeeklySchedule />
         </div>
       </div>
       <div className={styles.row}>
