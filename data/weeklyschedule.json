@@ -1,19 +1,23 @@
 {
-  "interval": "30 Noiembrie - 1 Decembrie",
-  "luni": "",
-  "marti": "",
-  "miercuri": "",
-  "joi": "",  
-  "vineri": "",
-  "sambata": [
-    "Sf. Ap. Andrei (ocrotitorul românilor)",
-    "Ora 08:00 - Utrenia şi Dumnezeiasca Liturghie",
-    "Ora 16:00 - Taina Marturisirii (Spovedanie)",
-    "Ora 17:00 - Ora de Religie si Repetiție Colinde",
-    "Ora 18:30 - Vecernia"
+  "interval": "05/12/2024 - 08/12/2024",
+  "luni": [],
+  "marti": [],
+  "miercuri": [],
+  "joi": [
+    "Ora 14:00 - Taina Mărturisirii (Spovedanie)",
+    "Ora 19:30 - Vecernie"
   ],
-  "duminica":  [
-    "Ziua Naţională a României",
-    "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
+  "vineri": [
+    "Sf. Ier. Nicolae",
+    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie"
+  ],
+  "sambata": [
+    "Ora 16:00 - Taina Marturisirii (Spovedanie)",
+    "Ora 17:00 - Ora de Religie și Repetiție Colinde",
+    "Ora 18:30 - Vecernie"
+  ],
+  "duminica": [
+    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
+    "Ora 16:00 - Concert de Colinde - COLINDUL SFÂNT ȘI BUN - Protopopiatul Toscana 1"
   ]
 }
