@@ -1,23 +1,18 @@
 {
-  "interval": "05/12/2024 - 08/12/2024",
-  "luni": [],
-  "marti": [],
-  "miercuri": [],
+  "interval": "24/12/2024 - 27/12/2024",
+  "marti": [
+    "Ora 08:00 - Ceasurile, Obednița și Dumnezeiasca Liturghie unită cu Vecernia",
+    "Ora 17:00 - Pavecernița"
+  ],
+  "miercuri": [
+    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
+    "Ora 17:00 - Vecernia"
+  ],
   "joi": [
-    "Ora 14:00 - Taina Mărturisirii (Spovedanie)",
-    "Ora 19:30 - Vecernie"
+    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
+    "Ora 17:00 - Vecernia"
   ],
   "vineri": [
-    "Sf. Ier. Nicolae",
     "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie"
-  ],
-  "sambata": [
-    "Ora 16:00 - Taina Marturisirii (Spovedanie)",
-    "Ora 17:00 - Ora de Religie și Repetiție Colinde",
-    "Ora 18:30 - Vecernie"
-  ],
-  "duminica": [
-    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
-    "Ora 16:00 - Concert de Colinde - COLINDUL SFÂNT ȘI BUN - Protopopiatul Toscana 1"
   ]
 }
