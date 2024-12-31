@@ -1,18 +1,45 @@
 {
-  "interval": "24/12/2024 - 27/12/2024",
-  "marti": [
-    "Ora 08:00 - Ceasurile, Obednița și Dumnezeiasca Liturghie unită cu Vecernia",
-    "Ora 17:00 - Pavecernița"
-  ],
-  "miercuri": [
-    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
-    "Ora 17:00 - Vecernia"
-  ],
-  "joi": [
-    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie",
-    "Ora 17:00 - Vecernia"
-  ],
-  "vineri": [
-    "Ora 08:00 - Utrenia și Dumnezeiasca Liturghie"
-  ]
+  "interval": "31/12/2024 - 07/01/2025",
+  "marti": {
+    "date": "31/12/2024",
+    "events": [
+      "Ora 18:30 - Vecernia"
+    ]
+  },
+  "miercuri": {
+    "date": "01/01/2025",
+    "celebration": "Tăierea împrejur cea după Trup a Domnului; Sf. ler. Vasile cel Mare",
+    "events": [
+      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
+    ]
+  },
+  "sambata": {
+    "date": "04/01/2025",
+    "events": [
+      "Ora 18:30 - Vecernia"
+    ]
+  },
+  "duminica": {
+    "date": "05/01/2025",
+    "celebration": "Ajunul Bobotezei",
+    "events": [
+      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie",
+      "Ora 16:00 - Vecernia si Slujbă Aghesmei Mari"
+    ]
+  },
+  "luni": {
+    "date": "06/01/2025",
+    "celebration": "Botezul Domnului (Boboteaza)",
+    "events": [
+      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie",
+      "Ora 11:30 - Slujba Aghesmei Mari"
+    ]
+  },
+  "marti2": {
+    "date": "07/01/2025",
+    "celebration": "Sf. Ioan Botezătorul",
+    "events": [
+      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
+    ]
+  }
 }

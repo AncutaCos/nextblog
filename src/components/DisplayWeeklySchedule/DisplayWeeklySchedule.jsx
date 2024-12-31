@@ -25,23 +25,19 @@ const DisplayWeeklySchedule = () => {
   return (
     <div className={styles.container}>
       <h2>Programul Săptămânii: {schedule.interval}</h2>
-      {['luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica']
-        .filter((day) => {
-          const events = schedule[day];
-          return Array.isArray(events) ? events.length > 0 : events?.trim(); // Controlla eventi validi
-        })
-        .map((day) => {
-          const events = schedule[day];
-          const eventList = Array.isArray(events) ? events : [events]; // Gestisce valori singoli
-          return (
-            <div key={day} className={styles.day}>
-              <h3>{day.charAt(0).toUpperCase() + day.slice(1)}</h3>
-              {eventList.map((event, index) => (
-                <p key={index}>{event}</p>
-              ))}
-            </div>
-          );
-        })}
+      {Object.entries(schedule)
+        .filter(([key, value]) => key !== 'interval' && value.events?.length > 0) // Esclude "interval" e verifica eventi
+        .map(([day, { date, celebration, events }]) => (
+          <div key={day} className={styles.day}>
+            <h3>
+              {day.charAt(0).toUpperCase() + day.slice(1)} - {date}
+              {celebration && ` (${celebration})`}
+            </h3>
+            {events.map((event, index) => (
+              <p key={index}>{event}</p>
+            ))}
+          </div>
+        ))}
     </div>
   );
 };
