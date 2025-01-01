@@ -100,10 +100,10 @@
   margin: 1px 0; /* Aggiunge margine per la spaziatura verticale */
   text-align: center; /* Centra il testo */
   text-decoration: none; /* Rimuove la sottolineatura */
-  background-color: #894a4a; /* Colore di sfondo */
+  background-color: #c51212; /* Colore di sfondo */
   color: #FFFFFF; /* Colore del testo */
   border-radius: 5px; /* Angoli arrotondati */
-  box-shadow: 0 4px 6px #6d4747; /* Effetto 3D iniziale */
+   /*box-shadow: 0 4px 6px #e3d9d9; /* Effetto 3D iniziale */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizioni per l'effetto hover */
   opacity: 0; /* Opacità iniziale */
   transition: opacity 1s ease-in-out, color 0.3s ease-in-out; /* Transizioni dell'opacità e del colore */
@@ -239,10 +239,10 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background-color: var(--bg); /* Use a background color to make it stand out */
+  background-color: rgb(83, 109, 156); /* Use a background color to make it stand out */
   border-radius: 30px; /* Rounded corners */
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  box-shadow: 0 4px 6px rgba(219, 214, 214, 0.904); /* Adds a subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   opacity: 0; /* Initial opacity */
 }

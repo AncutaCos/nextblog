@@ -62,7 +62,7 @@
 .editorToolbar button {
   padding: 10px;
   cursor: pointer;
-  background-color: var(--btn);
+  background-color: #c51212;
   border: none;
   border-radius: 5px;
   color: var(--textColor);

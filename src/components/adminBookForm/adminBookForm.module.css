@@ -17,7 +17,7 @@
 .container button {
   padding: 20px;
   cursor: pointer;
-  background-color: var(--btn);
+  background-color: #c51212;
   border: none;
   border-radius: 5px;
   color: white;
