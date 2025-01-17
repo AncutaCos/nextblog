@@ -24,20 +24,26 @@ const DisplayWeeklySchedule = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Programul Săptămânii: {schedule.interval}</h2>
+      <h2>{schedule.interval}</h2>
       {Object.entries(schedule)
         .filter(([key, value]) => key !== 'interval' && value.events?.length > 0) // Esclude "interval" e verifica eventi
         .map(([day, { date, celebration, events }]) => (
           <div key={day} className={styles.day}>
             <h3>
               {day.charAt(0).toUpperCase() + day.slice(1)} - {date}
-              {celebration && ` (${celebration})`}
+              {celebration && ` (${celebration})`} {/* Mostra la celebrazione se esiste */}
             </h3>
             {events.map((event, index) => (
               <p key={index}>{event}</p>
             ))}
           </div>
         ))}
+      {/* Aggiungi la nota sulle festività sotto se presente */}
+      {schedule.sarbatori_si_sfinti && (
+        <div className={styles.note}>
+          <p>{schedule.sarbatori_si_sfinti.nota}</p>
+        </div>
+      )}
     </div>
   );
 };

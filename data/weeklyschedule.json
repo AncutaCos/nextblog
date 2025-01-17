@@ -1,45 +1,27 @@
 {
-  "interval": "31/12/2024 - 07/01/2025",
-  "marti": {
-    "date": "31/12/2024",
+  "interval": "Program general",
+  "joi": {
+    "date": "",
     "events": [
-      "Ora 18:30 - Vecernia"
-    ]
-  },
-  "miercuri": {
-    "date": "01/01/2025",
-    "celebration": "Tăierea împrejur cea după Trup a Domnului; Sf. ler. Vasile cel Mare",
-    "events": [
-      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
+      "Ora 06:00 - Dumnezeiasca Liturghie",
+      "Ora 14:00 - 20:00 - Taina Mărturisirii (Spovedanie)"
     ]
   },
   "sambata": {
-    "date": "04/01/2025",
+    "date": "",
     "events": [
-      "Ora 18:30 - Vecernia"
+      "Ora 08:00 - Dumnezeiasca Liturghie și  Parastas (Pomenirea celor adormiți)",
+      "Ora 17:00 - Taina Mărturisirii (Spovedanie)",
+      "Ora 18:30 - Vecernie"
     ]
   },
   "duminica": {
-    "date": "05/01/2025",
-    "celebration": "Ajunul Bobotezei",
-    "events": [
-      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie",
-      "Ora 16:00 - Vecernia si Slujbă Aghesmei Mari"
-    ]
-  },
-  "luni": {
-    "date": "06/01/2025",
-    "celebration": "Botezul Domnului (Boboteaza)",
-    "events": [
-      "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie",
-      "Ora 11:30 - Slujba Aghesmei Mari"
-    ]
-  },
-  "marti2": {
-    "date": "07/01/2025",
-    "celebration": "Sf. Ioan Botezătorul",
+    "date": "",
     "events": [
       "Ora 08:00 - Utrenia si Dumnezeiasca Liturghie"
     ]
+  },
+  "sarbatori_si_sfinti": {
+    "nota": "Cu ocazia Sărbătorilor și a Sfinţilor însemnați prin cruce roșie in calendar se slujeste Utrenia si Dumnezeiasca Liturghie de la ora 08:00"
   }
 }
