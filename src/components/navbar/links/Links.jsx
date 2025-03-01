@@ -40,7 +40,7 @@ const Links = ({ session }) => {
           </div>
           <div className={styles.logoText}>
             <h1>{locale === 'ro' ? 'Parohia Ortodoxă ' : 'Chiesa Ortodossa'}</h1>
-            <h2>{locale === 'ro' ? 'Sfânta Mare Muceniță Anastasia Romana' : 'Santa Grande Martire Anastasia Romana'}</h2>
+            <h2>{locale === 'ro' ? 'Sfânta Muceniță Anastasia Romana' : 'Santa Martire Anastasia Romana'}</h2>
             <h3>Prato</h3>
           </div>
         </div>

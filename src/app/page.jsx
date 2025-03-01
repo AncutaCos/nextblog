@@ -1,4 +1,5 @@
 "use client";
+import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -344,6 +345,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <CookieBanner />
     </>
   );
 };
